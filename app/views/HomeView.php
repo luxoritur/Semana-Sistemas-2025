@@ -38,7 +38,6 @@
                 <nav class="hidden md:flex gap-6 text-sm font-medium">
                     <a href="#sobre" class="hover:text-accent transition">Sobre</a>
                     <a href="#dias" class="hover:text-accent transition">Días</a>
-                    <a href="#galeria" class="hover:text-accent transition">Galería</a>
                     <a href="#mi-info" class="hover:text-accent transition">Mi información</a>
                     <a href="#visitas" class="hover:text-accent transition">Registrar visita</a>
                 </nav>
@@ -125,10 +124,12 @@
     <section id="mi-info" class="py-16 bg-surface">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-white">Mi información</h2>
-            <div class="mt-6 grid md:grid-cols-3 gap-8 items-start">
-                <div class="md:col-span-1">
+            <div class="mt-6 grid md:grid-cols-5 gap-8 items-start">
+                <div class="sm:col-span-1">
                     <div class="rounded-2xl border border-dashed border-slate-700 bg-background p-4 shadow-sm">
-                        <div class="aspect-[3/4] rounded-xl bg-slate-800 grid place-content-center text-sm text-slate-500">Tu foto aquí (3:4)</div>
+                        <div class="rounded-xl border border-dashed border-slate-700 p-3">
+                            <img src=" images/descarga.jpeg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                        </div>
                     </div>
                 </div>
                 <div class="md:col-span-2">
@@ -152,18 +153,18 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl">
                 <h2 class="text-3xl font-bold text-white">Registrar visita</h2>
-                <form class="mt-6 grid gap-4" onsubmit="event.preventDefault(); alert('¡Gracias por visitarnos! (Demo)');">
+                <form class="mt-6 grid gap-4 rounded-xl border border-dashed border-slate-700 p-5" onsubmit="event.preventDefault(); alert('¡Gracias por visitarnos! (Demo)');">
                     <div>
                         <label for="nombre" class="block text-sm font-medium text-slate-300">Nombre completo</label>
-                        <input id="nombre" name="nombre" type="text" required class="mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
+                        <input id="nombre" name="nombre" type="text" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-slate-300">Correo electrónico</label>
-                        <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
+                        <input id="email" name="email" type="email" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
                     </div>
                     <div>
                         <label for="mensaje" class="block text-sm font-medium text-slate-300">Comentario</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent"></textarea>
                     </div>
                     <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-white font-semibold shadow hover:bg-indigo-700">Guardar visita</button>
                 </form>
