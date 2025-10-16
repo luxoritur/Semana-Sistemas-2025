@@ -12,6 +12,10 @@ class HomeController{
         return $this->view('dia1',['title' => 'Seccion dia 1']); 
     } 
 
+    public function dia2(){ 
+        return $this->view('dia2',['title' => 'Seccion dia 2']); 
+    } 
+
     public function view($vista, $data=[]){ 
         //require_once("../app/views/HomeView.php"); 
         extract($data); 

@@ -61,7 +61,7 @@
                 <div class="rounded-2xl border border-dashed border-slate-700 bg-surface p-4 shadow-sm">
                     <div class="w-full rounded-xl bg-slate-800 grid place-content-center text-slate-500 text-sm">
                         <!-- Imagen de portada -->
-                        <img src="images/SDS25.jpg" alt="Portada del video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                        <img src="images/SDS25.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
                     </div>
                 </div>
             </div>
@@ -86,7 +86,6 @@
                         <h3 class="font-semibold text-white">Enlaces rápidos</h3>
                         <ul class="mt-3 space-y-2 text-sm">
                             <li><a class="hover:text-accent" href="#dias">Agenda por días</a></li>
-                            <li><a class="hover:text-accent" href="#galeria">Galería</a></li>
                             <li><a class="hover:text-accent" href="#mi-info">Mi información</a></li>
                             <li><a class="hover:text-accent" href="#visitas">Registrar visita</a></li>
                         </ul>
@@ -98,12 +97,14 @@
 
     <!-- Agenda por Días -->
     <section id="dias" class="py-16 bg-background">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="flex items-end justify-between gap-6">
-                <h2 class="text-3xl font-bold text-white">Agenda y resumen por día</h2>
-            </div>
+        <div class="flex items-end justify-between gap-6">
+            <h2 class="p-5 text-3xl font-bold text-white">Agenda y resumen por día</h2>
+        </div>
 
-            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-surface border border-slate-700 shadow-sm overflow-hidden p-5">
+
+            <!-- dia 1 -->
+            <div class="rounded-xl p-3">
                 <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
                     <h3 class="text-lg font-semibold text-white"><a href="/public/dia1">Día 1 - Lunes</a></h3>
                     <p class="text-slate-400">Fecha: 13/10/2025</p>
@@ -111,12 +112,72 @@
                     <div class="rounded-xl border border-dashed border-slate-700 p-3">
                         <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
                             <!-- Imagen de portada -->
-                            <img src="images/escenario.jpg" alt="Portada del video" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                            <img src="images/escenario.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
                         </div>
                     </div>
                 </article>
-                <!-- Repetir para más días -->
             </div>
+
+            <!-- dia 2 -->
+            <div class="rounded-xl p-3">
+                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
+                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia2">Día 2 - Martes</a></h3>
+                    <p class="text-slate-400">Fecha: 14/10/2025</p>
+                    <!-- <p class="text-slate-300">Breve resumen de las actividades del día.</p> -->
+                    <div class="rounded-xl border border-dashed border-slate-700 p-3">
+                        <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
+                            <!-- Imagen de portada -->
+                            <img src="images/dia2.png" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- dia 3 -->
+            <div class="rounded-xl p-3">
+                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
+                    <h3 class="text-lg font-semibold text-white"><a href="">Día 3 - Miercoles</a></h3>
+                    <p class="text-slate-400">Fecha: 15/10/2025</p>
+                    <!-- <p class="text-slate-300">Breve resumen de las actividades del día.</p> -->
+                    <div class="rounded-xl border border-dashed border-slate-700 p-3">
+                        <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
+                            <!-- Imagen de portada -->
+                            <img src="images/dia3.jpg" alt="imagen" class="w-full h-full object-contain opacity-80 hover:opacity-100 transition" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- dia 4 -->
+            <div class="rounded-xl p-3">
+                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
+                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia4">Día 4 - Jueves</a></h3>
+                    <p class="text-slate-400">Fecha: 16/10/2025</p>
+                    <!-- <p class="text-slate-300">Breve resumen de las actividades del día.</p> -->
+                    <div class="rounded-xl border border-dashed border-slate-700 p-3">
+                        <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
+                            <!-- Imagen de portada -->
+                            <img src="images/escenario.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- dia 5 -->
+            <div class="rounded-xl p-3">
+                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
+                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia5">Día 5 - Viernes</a></h3>
+                    <p class="text-slate-400">Fecha: 17/10/2025</p>
+                    <!-- <p class="text-slate-300">Breve resumen de las actividades del día.</p> -->
+                    <div class="rounded-xl border border-dashed border-slate-700 p-3">
+                        <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
+                            <!-- Imagen de portada -->
+                            <img src="images/escenario.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+
         </div>
     </section>
 

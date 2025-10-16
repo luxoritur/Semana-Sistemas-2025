@@ -14,9 +14,15 @@
                 extend: {
                     colors: {
                         background: '#0f172a',
-                        surface: '#1e293b',
+                        surface: '#111827',
+                        /* un poco más oscuro para contraste */
+                        surface2: '#1f2937',
                         text: '#f1f5f9',
                         accent: '#6366f1',
+                        accent2: '#22d3ee'
+                    },
+                    boxShadow: {
+                        glow: '0 0 0 1px rgb(99 102 241 / 0.25), 0 8px 24px -8px rgb(99 102 241 / 0.35)'
                     }
                 }
             }
@@ -46,21 +52,56 @@
         </div>
     </header>
 
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-accent/10 via-transparent to-transparent pointer-events-none"></div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+                    Semana de <span class="bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent2">Sistemas 2025</span>
+                </h1>
+                <p class="mt-4 text-slate-300">
+                    Documentación personal de actividades, ponencias y proyectos. Explora el resumen del Día 1 con fotografías y observaciones clave.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="#dia1" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-accent/20 text-accent border border-accent/30 hover:bg-accent/30 transition">
+                        Ver Día 1
+                    </a>
+                    <a href="/public/#visitas" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-slate-700 hover:border-accent hover:text-accent transition">
+                        Registrar visita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Agenda por Días -->
-    <section id="dias" class="py-16 bg-background">
+    <section id="dia1" class="py-16 bg-background">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="flex items-end justify-between gap-6">
                 <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Resumen <span class="text-accent">Dia 1:</span></h1>
             </div>
 
             <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
-                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia1">Ponencia #1: El ABC de Bitcoin</a></h3>
-                    <p class="text-slate-400">Fecha: 13/10/2025 09:00AM Auditorio 1</p>
-                    <p>La ponencia “El ABC de Bitcoin”, impartida por Luis Contreras, introdujo a los asistentes en los conceptos esenciales de las criptomonedas y su funcionamiento.
-Se exploraron las bases de la tecnología blockchain, su impacto en la economía digital y las oportunidades que ofrece en el futuro financiero.
-Una charla dinámica y clara que permitió comprender cómo el Bitcoin transforma la manera en que entendemos el dinero.
-Este evento marcó el inicio de la Semana de Sistemas 2025 con una visión innovadora sobre la transformación digital.</p>
+                <article class="group rounded-2xl bg-surface2 border border-slate-800 hover:shadow-glow transition overflow-hidden p-5 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center rounded-full bg-accent/15 text-accent px-3 py-1 text-xs font-semibold border border-accent/20">Ponencia</span>
+                        <span class="text-xs text-slate-400">#1</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">
+                        <a href="/public/dia1" class="group-hover:text-accent transition">El ABC de Bitcoin</a>
+                    </h3>
+                    <p class="text-slate-400 text-sm flex flex-wrap gap-x-4 gap-y-1">
+                        <span>📅 13/10/2025</span>
+                        <span>🕘 9:00 a. m.</span>
+                        <span>📍 Auditorio 1</span>
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        La ponencia “El ABC de Bitcoin”, impartida por <b>Luis Contreras</b>, introdujo conceptos esenciales
+                        de criptomonedas y blockchain, su impacto en la economía digital y oportunidades de futuro. Una charla
+                        clara y dinámica que abrió la Semana de Sistemas 2025 con visión de transformación.
+                    </p>
                 </article>
             </div>
 
@@ -76,18 +117,27 @@ Este evento marcó el inicio de la Semana de Sistemas 2025 con una visión innov
         </div>
     </section>
 
-     <section id="dias" class="py-16 bg-background">
+    <section id="dias" class="py-16 bg-background">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
-                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia1">Ponencia #2: Inteligencia Artificial Generativa - de la idea a la accion</a></h3>
-                    <p class="text-slate-400">Fecha: 13/10/2025 11:00AM Auditorio 1</p>
-                     <p>
-                        La ponencia “Inteligencia Artificial Generativa: de la idea a la acción” presentó cómo las nuevas tecnologías basadas en IA están revolucionando la creatividad y la productividad.
-Se abordaron ejemplos prácticos de generación de texto, imágenes y código mediante modelos avanzados.
-El expositor mostró cómo pasar de una simple idea a soluciones reales impulsadas por la inteligencia artificial.
-Una charla inspiradora que destacó el poder transformador de la IA en la innovación y el desarrollo tecnológico.
+            <div class="mt-2 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="group rounded-2xl bg-surface2 border border-slate-800 hover:shadow-glow transition overflow-hidden p-5 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center rounded-full bg-accent/15 text-accent px-3 py-1 text-xs font-semibold border border-accent/20">Ponencia</span>
+                        <span class="text-xs text-slate-400">#2</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">
+                        <a href="/public/dia1" class="group-hover:text-accent transition">Inteligencia Artificial Generativa — de la idea a la acción</a>
+                    </h3>
+                    <p class="text-slate-400 text-sm flex flex-wrap gap-x-4 gap-y-1">
+                        <span>📅 13/10/2025</span>
+                        <span>🕚 11:00 a. m.</span>
+                        <span>📍 Auditorio 1</span>
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Se mostraron casos prácticos de generación de texto, imágenes y código con modelos avanzados,
+                        explicando cómo convertir ideas en soluciones reales. Una charla inspiradora sobre el poder
+                        transformador de la IA en innovación y productividad.
                     </p>
                 </article>
             </div>
@@ -111,21 +161,29 @@ Una charla inspiradora que destacó el poder transformador de la IA en la innova
     <section id="dias" class="py-16 bg-background">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
-                    <h3 class="text-lg font-semibold text-white"><a href="/public/dia1">Hackathon en C# – SDS25!</a></h3>
-                    <p class="text-slate-400">Fecha: 13/10/2025 01:00PM Auditorio 1</p>
-                    <p>
-                        En el Hackathon en C# – SDS25, los estudiantes demostraron su talento y creatividad desarrollando proyectos innovadores en programación.
-Durante la jornada, se presentaron diversas propuestas que destacaron por su originalidad y funcionalidad.
-El evento promovió el trabajo en equipo, la resolución de problemas y la aplicación práctica de conocimientos técnicos.
-El primer lugar fue otorgado a un destacado proyecto de bingo, reconocido por su diseño y ejecución sobresaliente.
+            <div class="mt-2 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="group rounded-2xl bg-surface2 border border-slate-800 hover:shadow-glow transition overflow-hidden p-5 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center rounded-full bg-emerald-400/15 text-emerald-300 px-3 py-1 text-xs font-semibold border border-emerald-300/20">Hackathon</span>
+                        <span class="text-xs text-slate-400">C# — SDS25</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">
+                        <a href="/public/dia1" class="group-hover:text-emerald-300 transition">Proyectos y equipo ganador</a>
+                    </h3>
+                    <p class="text-slate-400 text-sm flex flex-wrap gap-x-4 gap-y-1">
+                        <span>📅 13/10/2025</span>
+                        <span>🕐 1:00 p. m.</span>
+                        <span>📍 Auditorio 1</span>
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Estudiantes desarrollaron soluciones en C# destacando originalidad y funcionalidad. El primer lugar
+                        fue para un proyecto de bingo, reconocido por su diseño y ejecución sobresaliente.
                     </p>
                 </article>
             </div>
 
             <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-surface border border-slate-700 shadow-sm overflow-hidden p-5">
-       
+
                 <div class="rounded-xl border border-dashed border-slate-700 p-3">
                     <img src=" images/ganadores.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
                 </div>
