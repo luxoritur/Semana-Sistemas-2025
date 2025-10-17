@@ -136,17 +136,23 @@
             <!-- dia 3 -->
             <div class="rounded-xl p-3">
                 <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
-                    <h3 class="text-lg font-semibold text-white"><a href="">Día 3 - Miercoles</a></h3>
+                    <h3 class="text-lg font-semibold text-white">
+                        <a href="">Día 3 - Miércoles</a>
+                    </h3>
                     <p class="text-slate-400">Fecha: 15/10/2025</p>
-                    <!-- <p class="text-slate-300">Breve resumen de las actividades del día.</p> -->
+
                     <div class="rounded-xl border border-dashed border-slate-700 p-3">
-                        <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
+                        <div class="aspect-video rounded-lg bg-slate-800 overflow-hidden grid place-content-center">
                             <!-- Imagen de portada -->
-                            <img src="images/dia3.jpg" alt="imagen" class="w-full h-full object-contain opacity-80 hover:opacity-100 transition" />
+                            <img
+                                src="images/dia3.jpg"
+                                alt="imagen"
+                                class="w-full h-full object-contain opacity-80 hover:opacity-100 transition" />
                         </div>
                     </div>
                 </article>
             </div>
+
 
             <!-- dia 4 -->
             <div class="rounded-xl p-3">
