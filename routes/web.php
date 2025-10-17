@@ -11,6 +11,11 @@ Route::get("/dia2", [HomeController::class,"dia2"]);
 
 Route::get("/dia4", [HomeController::class,"dia4"]);
 
+Route::get("/dia5", [HomeController::class,"dia5"]);
+
+// Formulario
+Route::post("/datosPost", [HomeController::class,"guardarVisita"]);
+
 Route::dispatch();
 
 ?>

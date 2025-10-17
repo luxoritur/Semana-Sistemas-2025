@@ -178,7 +178,7 @@
                     <div class="rounded-xl border border-dashed border-slate-700 p-3">
                         <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
                             <!-- Imagen de portada -->
-                            <img src="images/escenario.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                            <img src="images/portada-dia5.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
                         </div>
                     </div>
                 </article>
@@ -220,18 +220,18 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl">
                 <h2 class="text-3xl font-bold text-white">Registrar visita</h2>
-                <form class="mt-6 grid gap-4 rounded-xl border border-dashed border-slate-700 p-5" onsubmit="event.preventDefault(); alert('¡Gracias por visitarnos! (Demo)');">
+                <form class="mt-6 grid gap-4 rounded-xl border border-dashed border-slate-700 p-5" action="datosPost" method="post"">
                     <div>
                         <label for="nombre" class="block text-sm font-medium text-slate-300">Nombre completo</label>
-                        <input id="nombre" name="nombre" type="text" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
+                        <input id="nombre" name="nombre" type="text" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" required>
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-slate-300">Correo electrónico</label>
-                        <input id="email" name="email" type="email" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" />
+                        <input id="email" name="email" type="email" required class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" required>
                     </div>
                     <div>
                         <label for="mensaje" class="block text-sm font-medium text-slate-300">Comentario</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent"></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="p-4 mt-1 w-full rounded-xl border-slate-700 bg-slate-800 text-white focus:border-accent focus:ring-accent" required></textarea>
                     </div>
                     <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-white font-semibold shadow hover:bg-indigo-700">Guardar visita</button>
                 </form>
