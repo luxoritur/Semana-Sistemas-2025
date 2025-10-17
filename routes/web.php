@@ -9,6 +9,8 @@ Route::get("/dia1", [HomeController::class,"dia1"]);
 
 Route::get("/dia2", [HomeController::class,"dia2"]);
 
+Route::get("/dia4", [HomeController::class,"dia4"]);
+
 Route::dispatch();
 
 ?>

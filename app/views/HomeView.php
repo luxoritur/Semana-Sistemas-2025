@@ -137,7 +137,7 @@
             <div class="rounded-xl p-3">
                 <article class="rounded-2xl bg-surface border border-slate-700 shadow-sm overflow-hidden p-5 space-y-4">
                     <h3 class="text-lg font-semibold text-white">
-                        <a href="">Día 3 - Miércoles</a>
+                        Día 3 - Miércoles
                     </h3>
                     <p class="text-slate-400">Fecha: 15/10/2025</p>
 
@@ -163,7 +163,7 @@
                     <div class="rounded-xl border border-dashed border-slate-700 p-3">
                         <div class="aspect-video rounded-lg bg-slate-800 grid place-content-center text-xs text-slate-500">
                             <!-- Imagen de portada -->
-                            <img src="images/escenario.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
+                            <img src="images/portada-dia4.jpg" alt="imagen" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition" />
                         </div>
                     </div>
                 </article>
