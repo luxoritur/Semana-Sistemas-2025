@@ -2,14 +2,14 @@
 
 ![Portada del Proyecto](public/images/readme/portada1.png)
 
-## Descripción
+## 📖 Descripción
 
-Este sitio web documenta las actividades realizadas durante la *Semana de Sistemas 2025*, incluyendo fotografías, videos y descripciones de los talleres, ponencias y eventos realizados.
+Este sitio web documenta las actividades realizadas durante la **Semana de Sistemas 2025**, incluyendo fotografías, videos y descripciones de los talleres, ponencias y eventos realizados.
 Fue desarrollado como parte de la materia **Tecnicas de Programacion para Internet**, y busca demostrar el uso de **tecnologías, herramientas y conceptos aprendidos**.
 
 ---
 
-## Tecnologías Utilizadas
+## ⚙️ Tecnologías Utilizadas
 
 - **HTML5**, **CSS3**, **Tailwind CSS**
 - **JavaScript** (Frontend)
@@ -35,4 +35,4 @@ Fue desarrollado como parte de la materia **Tecnicas de Programacion para Intern
    http://localhost:8081/public/ 
 
 
-### Creado por: David Elias Romero Claros - RC23030
+### 💻 Creado por: David Elias Romero Claros - RC23030
