@@ -1,4 +1,4 @@
-# Proyecto: [Blog de la Semana de Sistemas 2025]
+# Blog de la Semana de Sistemas 2025
 
 ![Portada del Proyecto](public/images/readme/portada1.png)
 
@@ -19,3 +19,20 @@ Fue desarrollado como parte de la materia **Tecnicas de Programacion para Intern
 - **Git & GitHub** para control de versiones
 
 ---
+
+## 🚀 Cómo Ejecutarlo Localmente
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/luxoritur/Semana-Sistemas-2025.git
+
+2. Crear contenedores:
+   ```bash
+   docker compose up --build   
+
+2. Una vez iniciados los contenedores la pagina estara disponible en:
+   ```bash
+   http://localhost:8081/public/ 
+
+
+### Creado por: David Elias Romero Claros - RC23030
