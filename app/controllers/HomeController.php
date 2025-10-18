@@ -59,6 +59,8 @@ class HomeController{
                 $stmt->execute();
 
                 echo "Visita registrada correctamente.";
+
+                // return $this->view('HomeView',['title' => 'Vista inicial del Blog Semana de Sistemas 2025']); 
             } catch (PDOException $e) {
                 echo "Error al guardar la visita: " . $e->getMessage();
             }
